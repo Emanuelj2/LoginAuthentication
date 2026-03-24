@@ -1,11 +1,11 @@
 package com.emanuel.loginauthentication.dto;
 
-public class LoginRequest {
+public class LoginRequestDTO {
     private String username;
     private String password;
 
-    public LoginRequest(){}
-    public LoginRequest(String username, String password)
+    public LoginRequestDTO(){}
+    public LoginRequestDTO(String username, String password)
     {
         this.username = username;
         this.password = password;
