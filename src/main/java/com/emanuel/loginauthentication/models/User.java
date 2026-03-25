@@ -31,11 +31,11 @@ public class User {
 
     //getters & setters
     public Long getId() { return id; }
-    public String getPassword() { return passwordHashed; }
+    public String getPasswordHashed() { return passwordHashed; }
     public String getUsername() { return username; }
     public String getEmail() { return email; }
 
-    public void setPassword(String password) { this.passwordHashed = passwordHashed; }
+    public void setPassword(String passwordHashed) { this.passwordHashed = passwordHashed; }
     public void setUsername(String username) { this.username = username; }
     public void setEmail(String email) { this.email = email; }
 }
