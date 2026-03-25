@@ -4,6 +4,7 @@ import com.emanuel.loginauthentication.dto.LoginRequestDTO;
 import com.emanuel.loginauthentication.dto.RegisterRequestDTO;
 import com.emanuel.loginauthentication.models.User;
 import com.emanuel.loginauthentication.repository.UserRepository;
+import org.jspecify.annotations.NonNull;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -52,6 +53,7 @@ public class UserService {
     //login with authentication
     public Authentication loginUser(LoginRequestDTO request)
     {
+        //this automatically checks if the user is in the db
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(request.getUsername(), request.getPassword())
         );
